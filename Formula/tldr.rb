@@ -2,16 +2,16 @@
 class Tldr < Formula
   desc "Simplified and community-driven man pages (tldr-pages)."
   homepage "https://github.com/litianqi1996/tldr-cli"
-  version "0.3"
+  version "0.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.3/tldr-cli_0.3_Darwin_x86_64.tar.gz"
-    sha256 "8bf4e21e077443483c28392641395f37222479a6baa84e9ba45f9a7c1759fa30"
+    url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.4/tldr_0.4_Darwin_x86_64.tar.gz"
+    sha256 "03cd8484d184eb8cb10e82ac52a548aac1b0b227cb505418610fdd569023d626"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.3/tldr-cli_0.3_Linux_x86_64.tar.gz"
-      sha256 "0df459ec33c71400b4bb1a5bdb9d409b23931bbe6c224eb38e8297be8a65cbf0"
+      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.4/tldr_0.4_Linux_x86_64.tar.gz"
+      sha256 "1ecd39907dc298b4544e32f52dbff2ee80e5800a85829aa5ec5e8a8765096beb"
     end
   end
 
