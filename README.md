@@ -2,11 +2,11 @@
 
 Some useful tools for brew-taps install 
 
-### Packages List
+## Packages List
 
 * [tldr](https://github.com/litianqi1996/tldr-cli)  Simplified and community-driven man pages
 
-### Built With
+## Built With
 
 * [gorelease](https://goreleaser.com/) 
 
