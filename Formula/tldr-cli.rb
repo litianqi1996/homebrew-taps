@@ -5,47 +5,43 @@
 class TldrCli < Formula
   desc "Simplified and community-driven man pages (tldr-pages)."
   homepage "https://github.com/litianqi1996/tldr-cli"
-  version "0.6.1"
+  version "0.6.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.1/tldr-cli_0.6.1_Darwin_arm64.tar.gz"
-      sha256 "08fd0f99e3c98e83a71cd0e7d04e88c87b2f58f45c28bc47e4d05edc5d32d186"
+      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.2/tldr-cli_0.6.2_Darwin_arm64.tar.gz"
+      sha256 "de0184b96978b37310b683492ed58a7142fdbf435cb7fc0937c381169720fdd7"
 
       def install
-        bin.install "tldr"
+        bin.install "tldr-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.1/tldr-cli_0.6.1_Darwin_x86_64.tar.gz"
-      sha256 "9cdf63f0d6692998258a9ee8f227ced4e6c17c92fe7d84c9349ae440cbc0c530"
+      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.2/tldr-cli_0.6.2_Darwin_x86_64.tar.gz"
+      sha256 "5f9429998a7c09b08a0c81dedb76d6c483d0d92dcd04726d3b92edec9b2deced"
 
       def install
-        bin.install "tldr"
+        bin.install "tldr-cli"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.1/tldr-cli_0.6.1_Linux_arm64.tar.gz"
-      sha256 "17282bd695505ac221eb440dc56131ea2eb38052640e1c50d435797cdfb102f4"
+      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.2/tldr-cli_0.6.2_Linux_arm64.tar.gz"
+      sha256 "a25e523345bc0ec65964b0167be23db326bdcc1d007953285abf092fd9ccebc9"
 
       def install
-        bin.install "tldr"
+        bin.install "tldr-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.1/tldr-cli_0.6.1_Linux_x86_64.tar.gz"
-      sha256 "9e5f7046fcdc0c5179581db2bd675a5df119c9e153df132dc77ff42d1b46f9aa"
+      url "https://github.com/litianqi1996/tldr-cli/releases/download/v0.6.2/tldr-cli_0.6.2_Linux_x86_64.tar.gz"
+      sha256 "469c4a9b38c85132344a414491f1ab513f4276e2bee5752ff5c3a3fe4b33697a"
 
       def install
-        bin.install "tldr"
+        bin.install "tldr-cli"
       end
     end
-  end
-
-  test do
-    system "#{bin}/tldr -version"
   end
 end
